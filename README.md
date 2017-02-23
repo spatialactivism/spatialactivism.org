@@ -16,5 +16,6 @@ Any pushed changes to the `deploy` branch gets automagically pushed to spatialac
 - `git merge master`
 - `git commit -am 'deploy message here'`
 - `git push`
+- http://www.spatialactivism.org should have been updated.
 
 (if that last one doesn't work, try `git push --set-upstream origin deploy`)
