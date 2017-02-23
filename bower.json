@@ -1,0 +1,25 @@
+{
+  "name": "spatialactivism.org",
+  "authors": [
+    "Dan Taeyoung <provolot@gmail.com>",
+    "Andrew Heumann <andheum@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "normalize-css": "normalize.css#^5.0.0",
+    "requirejs": "^2.3.3",
+    "lodash": "^4.17.4",
+    "showdown": "^1.6.4"
+  }
+}
