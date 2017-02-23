@@ -5,7 +5,7 @@
 - `npm install -g bower`
 - `bower install`
 - `python -m SimpleHTTPServer`
-- go to http://localhost:8080
+- go to http://localhost:8000
 
 ### deploy to spatialactivism.org
 
