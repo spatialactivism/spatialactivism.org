@@ -19,4 +19,4 @@ Any pushed changes to the `deploy` branch gets automagically pushed to spatialac
 - http://www.spatialactivism.org should have been updated.
 - remember to switch back to the master branch with `git checkout master`!
 
-(if that last one doesn't work, try `git push --set-upstream origin deploy`)
+(if `git push` doesn't work, try `git push --set-upstream origin deploy`)
