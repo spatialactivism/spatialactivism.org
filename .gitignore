@@ -1,3 +1,5 @@
 bower_components
 config.codekit
 node_modules
+*.swp
+*.sass-cache

@@ -13,9 +13,9 @@ const config = {
       {
         test: /\.scss$/,
         loaders: [
-          'style',
-          'css',
-          'sass?outputStyle=expanded'
+          'style-loader',
+          'css-loader',
+          'sass-loader?outputStyle=expanded'
         ]
 			}	
     ]

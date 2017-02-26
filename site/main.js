@@ -2,7 +2,7 @@ import $ from 'jquery'
 import _ from 'lodash'
 import showdown from 'showdown'
 import 'normalize-css'
-import './sa.scss'
+import './css/sa.scss'
 
 $(function() {
   var converter = new showdown.Converter();
