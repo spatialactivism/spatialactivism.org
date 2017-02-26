@@ -27,7 +27,7 @@
 
 #### deploy to spatialactivism.org
 
-Any pushed changes to the `deploy` branch gets automagically pushed to spatialactivism.org:
+Any pushed changes to the `deploy` branch gets automagically pushed to spatialactivism.org via a [post-receive hook](https://github.com/markomarkovic/simple-php-git-deploy):
 
 - do things in master, commit, push
 - `git checkout deploy`
