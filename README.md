@@ -1,12 +1,17 @@
 ## spatialactivism.org
 
-### get started:
+### start development server:
 
-- `npm install -g bower`
-- `bower install`
-- `python -m SimpleHTTPServer`
-- go to http://localhost:8000
+- `npm install`
+- `npm start`
+- go to http://localhost:8082
 
+### notes on npm & webpack
+
+- requirements should be added via `npm install --save MODULENAME`
+- web files are in `site/`
+- `main.js` loads all javascript & css
+ 
 ### deploy to spatialactivism.org
 
 Any pushed changes to the `deploy` branch gets automagically pushed to spatialactivism.org:
