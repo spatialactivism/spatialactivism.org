@@ -2,7 +2,7 @@ const path = require('path');
 var HtmlWebpackPlugin =  require('html-webpack-plugin');
 
 const config = {
-  entry: './main.js',
+  entry: './site/main.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
@@ -11,19 +11,18 @@ const config = {
   module: {
     loaders: [
       {
-        test: /\.sass$/,
+        test: /\.scss$/,
         loaders: [
           'style',
           'css',
-          'autoprefixer?browsers=last 3 versions',
           'sass?outputStyle=expanded'
-        ],
-      }
+        ]
+			}	
     ]
   },
 	plugins: [
 		new HtmlWebpackPlugin({
-      template: './index.html'
+      template: './site/index.html'
     })
 	]	
 };
