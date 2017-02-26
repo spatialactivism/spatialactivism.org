@@ -19,13 +19,13 @@
 
 ## deployment:
 
-#### build files:
+#### 1. build files:
 
 - run `npm run build`
 - files are in `./dist`
 - `git commit -am 'commit message here'`
 
-#### deploy to spatialactivism.org
+#### 2. deploy to spatialactivism.org
 
 Any pushed changes to the `deploy` branch gets automagically pushed to spatialactivism.org via a [post-receive hook](https://github.com/markomarkovic/simple-php-git-deploy):
 
