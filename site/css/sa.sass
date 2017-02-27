@@ -1,0 +1,13 @@
+html
+  margin: 0px
+  padding: 0px
+
+body
+  background-color: rgba(175,226,250,1);
+  background: @include filter-gradient(#afe2fa, #c7d0fc, horizontal);// IE6-9 fallback on horizontal gradient
+  background: @include background-image(linear-gradient(left, rgba(175,226,250,1) 0%, rgba(199,208,252,1) 100%));
+
+
+#test
+  background-color: blue
+
