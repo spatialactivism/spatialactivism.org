@@ -25,16 +25,20 @@
 - files are in `./dist`
 - `git commit -am 'commit message here'`
 
-#### 2. deploy to spatialactivism.org
+#### 2. deploy to development: dev.spatialactivism.org
 
-Any pushed changes to the `deploy` branch gets automagically pushed to spatialactivism.org via a [post-receive hook](https://github.com/markomarkovic/simple-php-git-deploy):
+Any pushed changes to the `dev-deploy` branch gets automagically pushed to `dev.spatialactivism.org` via a [post-receive hook](https://github.com/markomarkovic/simple-php-git-deploy):
 
 - do things in master, commit, push
-- `git checkout deploy`
+- `git checkout dev-deploy`
 - `git merge master`
 - `git commit -am 'deploy message here'`
 - `git push`
-- http://www.spatialactivism.org should have been updated!
+- http://dev.spatialactivism.org should have been updated!
 - remember to switch back to the master branch with `git checkout master`!
 
 (if `git push` doesn't work, try `git push --set-upstream origin deploy`)
+
+#### 3. deploy to production
+
+Deploying to `www.spatialactivism.org` is the same as above, except changes need to be merged/commited/pushed to the `deploy` branch.
