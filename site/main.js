@@ -5,11 +5,14 @@ import 'normalize-css'
 import './css/sa.sass'
 
 $(function() {
-  var converter = new showdown.Converter();
-  $(".markdown").each(function(i) {
-    console.log($(this));
-    $(this).html(converter.makeHtml($(this).html()));
-  });
+  $(".section").each((i, o) => {
+		console.log($(o));
+		var range = 50;
+		$(o).css("margin-left", _.random(-range, range) + "px");
+		$(o).css("margin-right", _.random(-range, range) + "px");
+		$(o).css("margin-top", _.random(-range, range) + "px");
+		$(o).css("margin-bottom", _.random(-range, range) + "px");
+	});
 });
 
 $("#test").html("test worked!");

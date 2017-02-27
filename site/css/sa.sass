@@ -1,13 +1,30 @@
 html
   margin: 0px
   padding: 0px
+  font-family: 'Sirin Stencil', sans-serif
 
 body
-  background-color: rgba(175,226,250,1);
-  background: @include filter-gradient(#afe2fa, #c7d0fc, horizontal);// IE6-9 fallback on horizontal gradient
-  background: @include background-image(linear-gradient(left, rgba(175,226,250,1) 0%, rgba(199,208,252,1) 100%));
+	// from http://www.cssmatic.com/gradient-generator
+  background: rgba(175,226,250,1);
+  background: -moz-linear-gradient(left, rgba(175,226,250,1) 0%, rgba(199,208,252,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(175,226,250,1)), color-stop(100%, rgba(199,208,252,1)));
+  background: -webkit-linear-gradient(left, rgba(175,226,250,1) 0%, rgba(199,208,252,1) 100%);
+  background: -o-linear-gradient(left, rgba(175,226,250,1) 0%, rgba(199,208,252,1) 100%);
+  background: -ms-linear-gradient(left, rgba(175,226,250,1) 0%, rgba(199,208,252,1) 100%);
+  background: linear-gradient(to right, rgba(175,226,250,1) 0%, rgba(199,208,252,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#afe2fa', endColorstr='#c7d0fc', GradientType=1 );
 
+#wrapper
+	max-width: 600px
+	margin: auto
 
-#test
-  background-color: blue
+#sections
+  display: flex
+  flex-direction: column
+
+.section 
+	padding: 20px
+
+#saw_what
+  margin-left: -30px
 
