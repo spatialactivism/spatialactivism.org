@@ -14,7 +14,7 @@ const config = {
   module: {
     loaders: [
       {
-        test: /\.scss$/,
+        test: /\.sass$/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: [
